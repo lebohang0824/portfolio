@@ -1,0 +1,344 @@
+/*
+ * Variables
+ */
+:root {
+	--white: #fff;
+	--primary: #ec9b3b;
+	--primary-1: rgba(227, 133, 22, .1);
+	--primary-2: rgba(227, 133, 22, .2);
+	--primary-3: rgba(227, 133, 22, .3);
+	--primary-4: rgba(227, 133, 22, .4);
+	--primary-5: rgba(227, 133, 22, .5);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-color: #666666;
+	background-image: url(../img/03.jpg);
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*
+ * Sidebar Start
+ */
+#sidebar {
+	width: 5em;
+	float: left;
+	height: 100%;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+#sidebar #logo {
+	padding: 1em;
+	display: block;
+	text-align: center;
+}
+
+#sidebar #logo img {
+	width: 50px;
+	height: auto;
+}
+
+#sidebar span {
+	display: block;
+	font-size: 1.4em;
+	padding: .2em 1em;
+	font-weight: bold;
+	text-align: center;
+	color: var(--white);
+	transform: rotate(-90deg);
+}
+
+/*
+ * Main Start
+ */
+#main {
+	height: 100%;
+	min-height: 100vh;
+	margin-left: 5em;
+	background-color: rgba(5, 5, 5, .9)
+}
+
+.menu-box {
+	width: 100%;
+	display: inline;
+	text-align: center;
+}
+
+#main #menu {
+	padding-top: 2em;
+	padding-right: 1em;
+}
+
+#menu a {
+	width: 6em;
+	padding: 1.2em;
+	font-size: 1em;
+	font-weight: 400;
+	color: var(--white);
+	letter-spacing: 1px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: var(--primary-1);	
+	border-bottom: solid 1px var(--primary);
+}
+
+#main #menu a:hover {
+	background-color: var(--primary-2);
+}
+
+/*
+ * Content Start
+ */
+#content {
+	padding: .1em;
+}
+
+#content .title {
+	font-size: 2.5em;
+	font-weight: 300;
+	text-align: center;
+	color: var(--white);
+}
+
+/**
+ * Info Start
+ */
+.info {
+	text-align: center;
+}
+
+.info a {
+	font-size: 2em;
+	margin: 0 .2em;
+	color: var(--white);
+}
+
+.info a:hover {
+	color: var(--primary-5);
+}
+
+/**
+ * Utilities
+ */
+.img {
+	width: 20em;
+	height: auto;
+	display: block;
+	border-radius: 50%;
+	filter: grayscale(80%);
+	margin: 5% auto 2em auto;
+	background-color: var(--primary-2);
+	border: dotted .1em var(--primary-3);
+}
+
+.img-md {
+	width: 15em;
+	height: auto;
+	display: block;
+	border-radius: 50%;
+	filter: grayscale(80%);
+	margin: 5% auto 2em auto;
+	background-color: var(--primary-2);
+	border: dotted .1em var(--primary-3);
+}
+
+.img-sm {
+	width: 10em;
+	height: auto;
+	display: block;
+	border-radius: 50%;
+	filter: grayscale(80%);
+	margin: 5% auto 2em auto;
+	background-color: var(--primary-2);
+	border: dotted .1em var(--primary-3);
+}
+
+.active {
+	background-color: var(--primary-4) !important;	
+}
+
+.txt-primary {
+	color: var(--primary);
+}
+
+.txt-grey {
+	color: #666;
+}
+
+.btn {
+	font-weight: 400;
+	padding: 1em 2em;
+	border-radius: 4%;
+	color: var(--white);
+	text-decoration: none;
+	border: solid 1px var(--primary);
+}
+
+.btn:hover {
+	background-color: var(--primary-2);
+}
+
+h1 small {
+	font-size: .5em;
+	letter-spacing: .1em;
+}
+
+/*
+ * About Start
+ */
+#about {
+	width: 40%;
+	margin: 1em auto;
+	color: var(--white);
+	font-family: 'Open Sans', sans-serif;
+}
+
+#about-header p {
+	padding: .5em;
+	font-weight: 300;
+	text-align: center;
+}
+
+#about-body {
+	padding: 1em;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr;
+}
+
+#about-body span {
+	padding: .5em;
+	border-bottom: solid .01em var(--primary);
+}
+
+#about-footer {
+	margin: 1em 0;
+}
+
+/*
+ * Contact Start
+ */
+#portfolio {
+	width: 60%;
+	color: #ffffff;
+	margin: 1em auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#portfolio-header p {
+	padding: .5em;
+	font-weight: 300;
+	text-align: center;
+}
+
+#portfolio-body {
+	padding: 1em;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#portfolio-body img {
+	width: 16em;
+	text-align: center;
+}
+
+#portfolio-body a {
+	padding: .5em;
+	text-decoration: none;
+	border: solid .01em var(--white);
+}
+
+/*
+ * Skills Start
+ */
+#skills {
+	width: 40%;
+	color: #ffffff;
+	margin: 1em auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#skills-header p {
+	padding: .5em;
+	font-weight: 300;
+	text-align: center;
+}
+
+#skills-body {
+	padding: 1em;
+	display: grid;
+	grid-row-gap: 1em;
+	grid-column-gap: 4em;
+	grid-template-columns: 1fr 1fr;
+}
+
+#skills-body span {
+	padding: .5em;
+	display: block;
+	border-bottom: solid .01em var(--primary);
+}
+
+/*
+ * Contact Start
+ */
+#contact {
+	width: 40%;
+	color: #ffffff;
+	margin: 1em auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#contact-header p {
+	padding: .5em;
+	font-weight: 300;
+	text-align: center;
+}
+
+#contact-body {
+	padding: 1em;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr;
+}
+
+#contact-body span {
+	padding: .5em;
+	border-bottom: solid .01em var(--primary);
+}
+
+
+/*
+ * Footer Start
+ */
+#footer {
+	font-size: .85em;
+	text-align: center;
+	color: var(--white);
+	padding: 2.5em 1em 1em 1em;
+}
+
+/*
+ * Tablet
+ */
+@media only screen and (max-width: 700px) {
+}
+
+/*
+ * Huawei p7
+ */
+@media only screen and (max-width: 598px) {
+}
+
+/*
+ * Nokia E1
+ */
+@media only screen and (max-width: 411px) {
+}
+
