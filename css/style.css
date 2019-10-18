@@ -3,12 +3,13 @@
  */
 :root {
 	--white: #fff;
-	--primary: #FFC038;
-	--primary-1: rgba(255, 192, 56, .1);
-	--primary-2: rgba(255, 192, 56, .2);
-	--primary-3: rgba(255, 192, 56, .3);
-	--primary-4: rgba(255, 192, 56, .4);
-	--primary-5: rgba(255, 192, 56, .5);
+	--primary: #1089ff;
+	--default: 16, 137, 255;
+	--primary-1: rgba(var(--default), .1);
+	--primary-2: rgba(var(--default), .2);
+	--primary-3: rgba(var(--default), .3);
+	--primary-4: rgba(var(--default), .4);
+	--primary-5: rgba(var(--default), .5);
 }
 
 body {
@@ -27,6 +28,7 @@ body {
 	width: 5em;
 	float: left;
 	height: 100%;
+	position: fixed;
 	min-height: 100vh;
 	background-color: rgba(0, 0, 0, .6);
 }
