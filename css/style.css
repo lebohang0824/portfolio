@@ -165,6 +165,10 @@ body {
 	background-color: var(--primary-4) !important;	
 }
 
+.label {
+	color: #c1c1c1 !important;	
+}
+
 .txt-primary {
 	color: var(--primary);
 }
