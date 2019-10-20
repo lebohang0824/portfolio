@@ -3,12 +3,13 @@
  */
 :root {
 	--white: #fff;
-	--primary: #ec9b3b;
-	--primary-1: rgba(227, 133, 22, .1);
-	--primary-2: rgba(227, 133, 22, .2);
-	--primary-3: rgba(227, 133, 22, .3);
-	--primary-4: rgba(227, 133, 22, .4);
-	--primary-5: rgba(227, 133, 22, .5);
+	--primary: #D1A827;
+	--default: 209, 168, 39;
+	--primary-1: rgba(var(--default), .1);
+	--primary-2: rgba(var(--default), .2);
+	--primary-3: rgba(var(--default), .3);
+	--primary-4: rgba(var(--default), .4);
+	--primary-5: rgba(var(--default), .5);
 }
 
 body {
@@ -27,6 +28,7 @@ body {
 	width: 5em;
 	float: left;
 	height: 100%;
+	position: fixed;
 	min-height: 100vh;
 	background-color: rgba(0, 0, 0, .6);
 }
@@ -59,7 +61,7 @@ body {
 	height: 100%;
 	min-height: 100vh;
 	margin-left: 5em;
-	background-color: rgba(5, 5, 5, .9)
+	background-color: rgba(5, 5, 5, .80)
 }
 
 .menu-box {
@@ -225,7 +227,7 @@ h1 small {
  * Contact Start
  */
 #portfolio {
-	width: 60%;
+	width: 40%;
 	color: #ffffff;
 	margin: 1em auto;
 	font-family: 'Open Sans', sans-serif;
@@ -245,7 +247,7 @@ h1 small {
 }
 
 #portfolio-body img {
-	width: 16em;
+	width: 100%;
 	text-align: center;
 }
 
@@ -275,7 +277,7 @@ h1 small {
 	padding: 1em;
 	display: grid;
 	grid-row-gap: 1em;
-	grid-column-gap: 4em;
+	grid-column-gap: 2em;
 	grid-template-columns: 1fr 1fr;
 }
 
@@ -328,6 +330,70 @@ h1 small {
  * Tablet
  */
 @media only screen and (max-width: 700px) {
+	.img {
+		width: 85%;
+	}
+
+	#main {
+		overflow: hidden;
+	}
+
+	#main #menu {
+		padding-top: 0%;
+	}
+
+	#menu a {
+		width: 100%;
+		display: block;
+	}
+
+	#about {
+		width: 90%;
+	}
+
+	#about-body {
+		padding: 0;
+		grid-template-columns: 1fr;
+	}
+
+	#portfolio {
+		width: 90%;
+	}
+
+	#portfolio-body {
+		padding: 0;
+		grid-template-columns: 1fr;
+	}
+
+	#portfolio-body a {
+		width: 90%;
+	}
+
+	#portfolio-body img {
+		width: 100%;
+	}
+
+	#skills {
+		width: 90%;
+	}
+
+	#skills-body {
+		padding: 1em;
+		grid-template-columns: 1fr;
+	}
+
+	#contact {
+		width: 90%;
+	}
+
+	#contact-body {
+		padding: .1em;
+		grid-template-columns: 1fr;
+	}
+
+	.title {
+		font-size: auto;
+	}
 }
 
 /*
