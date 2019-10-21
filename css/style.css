@@ -3,8 +3,8 @@
  */
 :root {
 	--white: #fff;
-	--primary: #D1A827;
-	--default: 209, 168, 39;
+	--primary: #ffd700;
+	--default: 255, 215, 0;
 	--primary-1: rgba(var(--default), .1);
 	--primary-2: rgba(var(--default), .2);
 	--primary-3: rgba(var(--default), .3);
@@ -61,7 +61,7 @@ body {
 	height: 100%;
 	min-height: 100vh;
 	margin-left: 5em;
-	background-color: rgba(5, 5, 5, .80)
+	background-color: rgba(5, 5, 5, .85)
 }
 
 .menu-box {
