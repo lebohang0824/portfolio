@@ -231,7 +231,7 @@ h1 small {
  * Contact Start
  */
 #portfolio {
-	width: 40%;
+	width: 30%;
 	color: #ffffff;
 	margin: 1em auto;
 	font-family: 'Open Sans', sans-serif;
@@ -257,8 +257,10 @@ h1 small {
 
 #portfolio-body a {
 	padding: .5em;
+	text-align: center;
+	color: var(--white);
 	text-decoration: none;
-	border: solid .01em var(--white);
+	background-color: #333;
 }
 
 /*
